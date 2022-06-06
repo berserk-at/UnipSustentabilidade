@@ -1,0 +1,153 @@
+@keyframes go-back {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes go-forward {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('img/fundo.jpg');
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	margin-top: 1.5em;
+}
+h1, h2, p, ul, table, caption{
+	background-color: white;
+	opacity: 0.85;
+	padding: 10px;
+}
+p, li, table{
+	animation: go-back 2s;
+}
+h1, h2, caption{
+	animation: go-forward 2s;
+}
+h2{
+	text-align: center;
+}
+.menu{
+	background-color: rgb(1, 20, 1);
+	color: white;
+	display: table;
+	font-size: 18pt;
+	font-weight: bold;
+	list-style: none;
+	margin-bottom: 40px;
+	opacity: 0.8;
+	width: 95%;
+}
+.menu li{	
+	display: table-cell;
+	float:left;
+	height: 40px;
+	margin-left: 10px;
+	text-align: center;
+	width:250px;
+	vertical-align: middle;
+}
+.submenu{
+	background-color: rgb(1, 20, 1);
+	color: white;
+	display: table;
+	font-size: 14pt;
+	font-weight: bold;
+	list-style: none;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	opacity: 0.8;
+	width: 95%;
+}
+.submenu li{	
+	display: table-cell;
+	float:left;
+	height: 20px;
+	margin: 10px;
+	text-align: center;
+	width:40%;
+	vertical-align: middle;
+}
+a { 
+	background-color: rgb(1, 20, 1);
+	text-decoration: none;
+}
+a:link { 
+	color: white; 
+}
+a:visited { 
+	color: white; 
+}
+a:hover { 
+	color: white; 
+	text-decoration: underline;
+}
+h1{
+	color: rgb(1, 20, 1);
+	font-size: 20pt;
+	text-align: center;
+}
+p {
+	border-radius: 5pt;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 0;
+	text-align: justify;
+	text-indent: 1.5em;
+}
+p + p {
+	margin-top: 1.5em;
+}
+.rodape{
+	background-color: rgb(1, 20, 1);
+	color:white;
+	display: block;
+	font-size: 16pt;
+	height: 50px;
+	margin-top: 40px;
+	opacity: 0.8;
+	text-align: center;
+	width: 100%;
+}
+table{
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+	border-spacing: 0;
+	border-spacing: 10px;
+    border-collapse: collapse;
+}
+td,th{
+	border: 1px solid black;
+	padding: 5px;
+}
+img{
+	border: 5px solid rgb(179, 174, 174);
+}
+img:hover{
+	border: 5px solid black;
+}
+.lista{
+	margin-top: 10px;
+	list-style: square;
+}
+.lista li{
+	margin-left: 30px;
+	margin-right: 30px;
+}
